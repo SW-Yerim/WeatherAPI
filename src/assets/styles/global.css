@@ -1,0 +1,53 @@
+/* 태블릿 (최대 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* 모바일 (최대 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../fonts/AppleSDGothicNeoH.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../fonts/AppleSDGothicNeoEB.ttf);
+  font-weight: 800;
+}
+
+html * {
+  font-family: "AppleSDGothicNeo";
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  color: #cc0000;
+}
+
+.blue {
+  color: #005dc6;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100vw - 100px);
+  height: calc(100vh - 100px) !important;
+  font-size: 34px;
+  text-align: center;
+  line-height: 50px;
+}

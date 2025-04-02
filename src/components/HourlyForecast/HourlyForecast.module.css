@@ -1,0 +1,72 @@
+.hourly {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.hourly > p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hourlyList {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.hourlyList > li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+.hourlyList > li p:nth-child(2) {
+  margin: 5px;
+}
+
+.hourlyList > li p img {
+  width: 50px;
+}
+
+/* 태블릿 (최대 1024px) */
+@media (max-width: 1024px) {
+  .hourly > p {
+    font-size: 18px;
+  }
+
+  .hourlyList > li {
+    font-size: 12px;
+  }
+
+  .hourlyList > li p:nth-child(2) {
+    margin: 5px;
+  }
+
+  .hourlyList > li p img {
+    width: 40px;
+  }
+}
+
+/* 모바일 (최대 768px) */
+@media (max-width: 768px) {
+  .hourly > p {
+    font-size: 16px;
+  }
+
+  .hourlyList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+  }
+
+  .hourlyList > li {
+    font-size: 10px;
+  }
+
+  .hourlyList > li p:nth-child(2) {
+    margin: 0px;
+  }
+}

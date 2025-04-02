@@ -1,0 +1,113 @@
+.contentWrap {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.weatherList {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.weatherList > li {
+  border-bottom: 1px solid #666;
+  padding: 25px 15px;
+  font-size: 12px;
+}
+
+.weatherList > li:nth-child(n + 7) {
+  width: auto;
+  grid-column: span 2;
+}
+
+.weatherList p {
+  margin-bottom: 20px;
+}
+
+.weatherList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weatherList div img {
+  width: 40px;
+}
+
+/* 태블릿 (최대 1024px) */
+@media (max-width: 1024px) {
+  .contentWrap {
+    width: 75vw;
+    margin: 40px auto;
+  }
+
+  .content {
+    gap: 70px;
+  }
+
+  .weatherList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .weatherList > li {
+    padding: 15px 10px;
+    font-size: 10px;
+  }
+
+  .weatherList > li:nth-child(n + 7) {
+    grid-column: span 1;
+  }
+
+  .weatherList div {
+    font-size: 16px;
+  }
+
+  .weatherList div img {
+    width: 30px;
+  }
+}
+
+/* 모바일 (최대 768px) */
+@media (max-width: 768px) {
+  .contentWrap {
+    width: 70vw;
+    margin: 40px auto;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .weatherList > li {
+    padding: 15px 5px;
+  }
+
+  .weatherList p {
+    margin-bottom: 10px;
+  }
+
+  .weatherList div {
+    font-size: 14px;
+  }
+
+  .weatherList span {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .weatherList div img {
+    width: 24px;
+  }
+}
