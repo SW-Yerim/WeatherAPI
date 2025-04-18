@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/WeatherAPI/static/css/main.f51f0eb3.css",
+    "main.js": "/WeatherAPI/static/js/main.0b93d6fe.js",
+    "static/js/453.97127cc3.chunk.js": "/WeatherAPI/static/js/453.97127cc3.chunk.js",
+    "static/media/AppleSDGothicNeoH.ttf": "/WeatherAPI/static/media/AppleSDGothicNeoH.c9b896b8f1d363108e8c.ttf",
+    "static/media/AppleSDGothicNeoEB.ttf": "/WeatherAPI/static/media/AppleSDGothicNeoEB.ea6bd07739f11db86707.ttf",
+    "static/media/icon06.png": "/WeatherAPI/static/media/icon06.e641146d2eca0062c4b1.png",
+    "static/media/icon05.png": "/WeatherAPI/static/media/icon05.272af16fc6c9ac138022.png",
+    "static/media/icon01.png": "/WeatherAPI/static/media/icon01.4ba83f6eb78bed81abca.png",
+    "static/media/icon02.png": "/WeatherAPI/static/media/icon02.3369b2750dc3ae36d13d.png",
+    "static/media/icon03.png": "/WeatherAPI/static/media/icon03.443ce170acf386f6687e.png",
+    "static/media/icon04.png": "/WeatherAPI/static/media/icon04.505cd261ea6b89c63cd0.png",
+    "index.html": "/WeatherAPI/index.html",
+    "main.f51f0eb3.css.map": "/WeatherAPI/static/css/main.f51f0eb3.css.map",
+    "main.0b93d6fe.js.map": "/WeatherAPI/static/js/main.0b93d6fe.js.map",
+    "453.97127cc3.chunk.js.map": "/WeatherAPI/static/js/453.97127cc3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f51f0eb3.css",
+    "static/js/main.0b93d6fe.js"
+  ]
+}
