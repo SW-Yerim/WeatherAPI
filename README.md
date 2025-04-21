@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# 🌤️ Weather Application – 날씨 어플리케이션
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Summary  
+지역별 현재 날씨와 대기질 상태를 확인할 수 있는 일기예보 어플리케이션입니다.  
 
-## Available Scripts
+사용자는 내 위치를 포함해 **미국, 영국, 한국, 호주** 등 총 5개 지역의  
+- **현재 일기예보**  
+- **3시간 간격 시간대별 날씨**  
+- **5일치 주간 예보**  
+를 확인할 수 있습니다.
 
-In the project directory, you can run:
+> 📍 현재는 지역 리스트가 하드코딩되어 있으며, 추후 **지역 검색 기능 추가 예정**입니다.
+> 🎯 반응형으로 제작되어 모바일 환경에서도 최적화된 UI를 제공합니다.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ 사용 기술 및 언어  
+- **Frontend**: React, JavaScript  
+- **Styling**: CSS Module  
+- **API**: OpenWeatherMap API (날씨 및 대기질 정보)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🔗 프로젝트 링크  
+- GitHub: [https://github.com/SW-Yerim/WeatherAPI](https://github.com/SW-Yerim/WeatherAPI)  
+- Live Demo: [https://sw-yerim.github.io/WeatherAPI](https://sw-yerim.github.io/WeatherAPI)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ 주요 기능 및 특징  
+- ✅ 버튼 클릭 시 지역별 날씨 정보 요청 및 출력  
+- ✅ 현재 선택된 지역의 상세 정보 출력:  
+  - 최저/최고 기온, 체감온도, 습도, 일출/일몰 시간 등  
+- ✅ 대기질 정보 표시:  
+  - 미세먼지(PM10), 초미세먼지(PM2.5), 일산화탄소(CO) 등  
+- ✅ 시간대별(3시간 간격) 날씨 예보 제공  
+- ✅ 5일치 주간 날씨 요약 제공  
+- ✅ 반응형 UI (모바일/태블릿 대응)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎯 프로젝트 선정 이유 및 느낀점  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **React 기초 설계 학습**  
+   - 언어마다 기본적인 폴더 구조에 차이가 있는데, React에서는 폴더를 어떤 방식으로 구성하는지 학습하고자 하였습니다.
 
-### `npm run eject`
+2. **데이터 상태 관리 경험**  
+   - useState, useEffect, useContext, useMemo 등 다양한 Hook을 실습하며 상태 관리 방법에 대해 경험해보았습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Open API 연동 실습**  
+   - 실시간 API 응답 데이터를 활용해 필요한 정보를 필터링하고 가공하여 컴포넌트에 적용하는 과정을 실습하였습니다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **반응형 스타일링 실습**  
+   - `CSS Module`과 media query를 활용하여 다양한 디바이스에서도 자연스럽게 동작할 수 있도록 레이아웃을 구성해보며 실무 적용을 대비하였습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧩 트러블슈팅  
 
-## Learn More
+| 문제 상황 | 원인 | 해결 방법 |
+|-----------|------|------------|
+| API 응답이 불규칙하게 렌더링됨 | `useEffect` 의존성 배열 누락 | 의존성 배열 추가 후 필요한 조건에 따라 재렌더링 제어 |
+| 대기질 수치 단위 혼란 | 단위에 대한 사전 정보 부족 | API 응답값을 기준으로 수치를 해석하고 필요한 단위로 변환 |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔧 향후 개선 계획  
+- 지역 검색 기능 구현 (현재 하드코딩 → 검색 기반 API 요청 방식으로 전환 예정)  
