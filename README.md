@@ -26,6 +26,7 @@
 ## 🔗 프로젝트 링크  
 - GitHub: [https://github.com/SW-Yerim/WeatherAPI](https://github.com/SW-Yerim/WeatherAPI)  
 - Live Demo: [https://sw-yerim.github.io/WeatherAPI](https://sw-yerim.github.io/WeatherAPI)
+- 프로젝트 상세내용: https://wooye.tistory.com/14
 
 <br>
 
